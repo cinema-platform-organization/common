@@ -2,6 +2,9 @@
 	"name": "@cinema-platform/common",
 	"version": "1.0.0",
 	"description": "Core shared components for Cinema Platform microservices ecosystem",
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"files": [
