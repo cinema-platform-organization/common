@@ -1,5 +1,5 @@
 import { type DynamicModule, Module } from "@nestjs/common";
-import { ConfigService } from "@nestjs/config";
+import { ConfigModule, ConfigService } from "@nestjs/config";
 
 import { GRPC_CLIENT_PREFIX } from "./constants/grpc.constants";
 import { GrpcClientFactory } from "./factory/grpc-client.factory";
@@ -12,6 +12,7 @@ export class GrpcModule {
 	): DynamicModule {
 		return {
 			module: GrpcModule,
+			imports: [ConfigModule],
 			providers: [
 				GrpcClientFactory,
 				...clients.map(token => {
