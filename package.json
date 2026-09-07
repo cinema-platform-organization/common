@@ -1,6 +1,6 @@
 {
 	"name": "@cinema-platform/common",
-	"version": "1.1.8",
+	"version": "1.1.9",
 	"description": "Core shared components for Cinema Platform microservices ecosystem",
 	"publishConfig": {
 		"access": "public"

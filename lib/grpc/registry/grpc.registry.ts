@@ -34,6 +34,6 @@ export const GRPC_CLIENTS = {
 	THEATER_PACKAGE: {
 		package: "theater.v1",
 		protoPath: PROTO_PATHS.THEATER,
-		env: "MOVIE_GRPC_URL",
+		env: "THEATER_GRPC_URL",
 	},
 } as const;
