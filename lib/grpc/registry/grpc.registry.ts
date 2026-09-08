@@ -46,4 +46,9 @@ export const GRPC_CLIENTS = {
 		protoPath: PROTO_PATHS.SEAT,
 		env: "THEATER_GRPC_URL",
 	},
+	SCREENING_PACKAGE: {
+		package: "screening.v1",
+		protoPath: PROTO_PATHS.SCREENING,
+		env: "SCREENING_GRPC_URL",
+	},
 } as const;
