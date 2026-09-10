@@ -56,4 +56,9 @@ export const GRPC_CLIENTS = {
 		protoPath: PROTO_PATHS.PAYMENT,
 		env: "PAYMENT_GRPC_URL",
 	},
+	BOOKING_PACKAGE: {
+		package: "booking.v1",
+		protoPath: PROTO_PATHS.BOOKING,
+		env: "BOOKING_GRPC_URL",
+	},
 } as const;
