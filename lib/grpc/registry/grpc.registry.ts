@@ -51,4 +51,9 @@ export const GRPC_CLIENTS = {
 		protoPath: PROTO_PATHS.SCREENING,
 		env: "SCREENING_GRPC_URL",
 	},
+	PAYMENT_PACKAGE: {
+		package: "payment.v1",
+		protoPath: PROTO_PATHS.PAYMENT,
+		env: "PAYMENT_GRPC_URL",
+	},
 } as const;
