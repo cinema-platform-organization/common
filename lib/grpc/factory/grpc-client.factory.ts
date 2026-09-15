@@ -16,7 +16,16 @@ export class GrpcClientFactory {
 	}) {
 		return ClientProxyFactory.create({
 			transport: Transport.GRPC,
-			options,
+			options: {
+				...options,
+				loader: {
+					keepCase: false,
+					longs: String,
+					enums: String,
+					defaults: true,
+					oneofs: true,
+				},
+			},
 		}) as ClientGrpc;
 	}
 
