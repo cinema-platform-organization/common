@@ -3,7 +3,7 @@ import { RpcException } from "@nestjs/microservices";
 import { RpcStatus } from "../../enums";
 
 export interface GrpcError {
-	code: number;
+	code: RpcStatus;
 	details?: string;
 	message?: string;
 }
